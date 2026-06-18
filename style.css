@@ -217,7 +217,8 @@ header {
   background-image: url(files/sliderbg.webp);
   background-size: cover;
   background-position: center;
-  height: 800px;
+  height: 680px;
+  position:relative;
 }
 
 .landing-mainbox {
@@ -288,4 +289,36 @@ header {
   top: -320px;
   left: 0;
   width: 570px;
+} 
+
+.menu-part {
+  width:100%;
+  background-color: rgb(241 240 240);
+
+}
+
+.float-landingbox {
+  position:absolute;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding:0.5rem 0.7rem;
+  border-radius: 35px;
+  bottom: -35px;
+  left: 23%;
+}
+
+.halalimg {
+  width:50px;
+  margin-right:20px;
+}
+
+.halal-header {
+  color:#B7191B;
+  margin-right:20px;
+}
+
+.halalbox-text {
+  font-size: 0.7rem;
 }
