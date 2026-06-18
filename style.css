@@ -1,0 +1,291 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration:none; 
+}
+
+ul, ol {
+  padding: 0;
+}
+
+/*
+    End of css reset
+*/
+
+@font-face {
+  font-family: 'saira';
+  src: url(fonts/Saira-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'sairalight';
+  src: url(fonts/Saira_Condensed-ExtraLight.ttf);
+}
+
+body {
+  font-family: 'saira';
+}
+
+.tc {
+  text-align: center;
+}
+
+.redheader-main {
+    width:100%;
+    background-color: rgb(137 1 0);
+    height: auto;
+}
+
+.redheader-box {
+    display: flex;
+    max-width: 950px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    padding:0.5rem 0;
+}
+
+.redheader-social {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:15%;
+}
+
+.redheader-icon {
+    width: 23px;
+}
+
+.redheader-icon:hover {
+  padding:2px;
+}
+
+.icon-special:hover {
+  padding:2px;
+}
+
+.icon-special {
+    width: 17px;
+}
+
+.booknow {
+    color: hsl(36.52deg 67.93% 46.47%);
+    font-size: 0.75rem;
+}
+
+.booknow:hover {
+  color:white;
+}
+
+.redheader-book {
+    width:15%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.header {
+  background-color: rgb(241 240 240);
+  width:100%;
+  height: auto;
+} 
+
+.header-logobox {
+  width:35%;
+  
+}
+
+header {
+  width:100%;
+  background-color:rgb(241 240 240);
+  height: auto;
+
+}
+
+.header-mainbox {
+  max-width: 950px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  margin: 0 auto;
+  padding: 0.75rem 0 3rem 0;
+}
+
+.header-logobox {
+  width:20%;
+}
+
+.logo-icon {
+  width:100%;
+}
+
+.header-listbox {
+  width:65%;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  list-style: none;
+  width: 100%;
+}
+
+.list-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listtag-link {
+  color:rgb(88 88 88);
+  font-size:0.8rem;
+}
+
+.listtag-link:hover {
+  color: rgb(137 1 0);
+}
+
+.tag-rightborder {
+  width:1px;
+  height:10px;
+  background-color: rgb(9, 9, 9);
+  border-radius: 4px;
+  margin-left: 15px;
+}
+
+.mlanding {
+  width: 100%;
+  height: auto;
+  background-image: url(files/sliderbg.webp);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.landing-mainbox {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction: row;
+}
+
+.landing-boxing {
+  width: 50%;
+}
+
+.landing-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.landing-topimg {
+  width:20px;
+  margin:0 auto;
+}
+
+.landing-bottomimg {
+  width:7px;
+  margin:0 auto;
+}
+
+.landing-htext {
+  color:white;
+  text-align: center;
+}
+
+.landing-subtext {
+  color:white;
+  font-size: 1.1rem;
+  font-family: 'sairalight';
+}
+
+.landing-menulink {
+  color:white;
+  padding: 10px 20px;
+  background-color: rgb(137 1 0);
+  font-size: 0.7rem;
+  border-radius: 22px;
+}
+
+.landing-menulink:hover {
+  background-color: rgb(216 164 56);
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.landing-imgbox {
+  position: relative;
+  width:47%;
+}
+
+.landing-img {
+  position: absolute;
+  top: -320px;
+  left: 0;
+  width: 570px;
+}

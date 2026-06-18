@@ -1,0 +1,3 @@
+note//
+
+1.fix the bell icon next to the book link
