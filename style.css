@@ -444,3 +444,56 @@ header {
   font-size: 0.7rem;
   font-weight: lighter;
 }
+
+.red-part-section {
+  width: 100%;
+  background-color: rgb(241 240 240);
+  padding-bottom: 3rem;
+}
+
+.red-part-mainbox {
+  background-color: #B7191B;
+  max-width: 950px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding:4rem 2.5rem;
+  border-radius:15px;
+  margin: 0 auto;
+   align-items: flex-start;
+}
+
+.red-part-boxes {
+  width:23%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.redpart-boxheader {
+  font-size: 1.3rem;
+  color: #fff;
+  transition: color 0.2s ease;
+  font-weight: lighter;
+  min-height: 90px;
+  line-height: 1.3;
+}
+
+.redpart-boxheader:hover {
+  color: rgb(216 164 56);
+}
+
+.redpart-boxicon {
+  width:70px;
+  margin-bottom: 0.85rem;
+  height: 70px;
+  object-fit: contain;
+}
+
+.redpart-textbox {
+  color:rgb(216 164 56);
+  font-weight: lighter;
+  font-size: 0.7rem;
+  line-height: 25px;
+}
