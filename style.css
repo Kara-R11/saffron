@@ -448,7 +448,7 @@ header {
 .red-part-section {
   width: 100%;
   background-color: rgb(241 240 240);
-  padding-bottom: 3rem;
+  padding-bottom: 4.5rem;
 }
 
 .red-part-mainbox {
@@ -485,9 +485,9 @@ header {
 }
 
 .redpart-boxicon {
-  width:70px;
+  width:60px;
   margin-bottom: 0.85rem;
-  height: 70px;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -496,4 +496,218 @@ header {
   font-weight: lighter;
   font-size: 0.7rem;
   line-height: 25px;
+}
+
+.postpart-header {
+  text-align: center;
+  color: #B7191B;
+  font-size: 2.2rem;
+  background-color: rgb(241 240 240);
+  font-weight: lighter;
+  padding-bottom: 2rem;
+  transition: text-shadow 0.4s ease;
+}
+
+.postpart-header:hover {
+  text-shadow: 
+     3px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/*start of blog part*/
+
+.blog-part {
+  width:100%;
+  background-color: rgb(241 240 240);
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*here the start*/
+.blog-mainbox {
+  max-width: 950px;
+  display: flex;
+  flex-direction:row;
+  margin: 0 auto;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.blog-posts {
+  width:24%;
+  display: flex;
+  flex-direction: column; 
+  min-width: 230px;
+  border-radius: 7px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.bpost-textbox {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.bpost-img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  transition: transform 0.4s ease;
+}
+
+.bpost-header {
+  font-size: 0.9rem;
+  color: #B7191B;
+  padding: 0.7rem;
+}
+
+.bpost-imgbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;                  
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.119);
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.blog-posts:hover .overlay {
+  opacity: 0;
+}
+
+.blog-posts:hover {
+box-shadow: 0 25px 65px rgba(0, 0, 0, 0.38);
+transform: translateY(-3px);
+}
+
+.bpost-text {
+  padding:0 0.7rem 0.7rem 0.7rem;
+  font-size: 0.67rem;
+  color:#545454;
+  font-weight:lighter;
+  line-height: 1.9;
+}
+
+.bpost-link {
+  color: rgb(216 164 56);
+  padding: 0.7rem;
+  text-align: left !important;
+  font-size: 0.7rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+.bpost-date {
+  padding: 0.7rem;
+  border-top: 1px solid #EAEAEA;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 0.7rem;
+  color:#545454;
+  width:100%;
+}
+
+.allpost-btn {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  padding:10px 20px ;
+  background-color: #B7191B;
+  color: #fff;
+  transition: background-color 0.35s ease-out;
+  border-radius: 25px;
+}
+
+.allpost-btn:hover {
+  background-color: rgb(216 164 56);
+}
+
+.metro-part {
+  width:100%;
+  background-color: rgb(241 240 240);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.mtrpart-mainbox {
+  max-width: 950px;
+  background-image: url(files/metro1.webp);
+  border-radius: 10px;
+  margin: 0 auto;
+  background-size: cover;        
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;      
+  width: 100%;
+  position: relative;
+}
+
+.mtr-whitebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin:0 auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  width:65%;
+  position: absolute;
+  top:140px;
+  left:170px;
+  border-radius: 15px;
+}
+
+.mtr-logo {
+  width:50px;
+  padding-bottom:15px;
+}
+
+.mtr-smallhead {
+  color: #B7191B;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.mtr-header {
+  color:#B7191B;
+  font-size: 1.6rem;
+  padding-bottom:0.5rem;
+}
+
+.mtr-text {
+  color:#545454;
+  font-size: 0.65rem;
+  max-width:300px;
+  padding-bottom: 0.7rem;
+}
+
+.mtr-link {
+  padding:10px 15px;
+  background-color: #B7191B;
+  color: #fff;
+  font-size: 0.7rem;
+  border-radius: 25px;
+  transition: all 0.35s ease-out;
+}
+
+.mtr-link:hover {
+  background-color: rgb(216 164 56);
 }
