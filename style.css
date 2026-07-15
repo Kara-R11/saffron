@@ -344,7 +344,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
   margin: 0 auto;
 }
 
@@ -457,7 +456,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap;
   padding:4rem 2.5rem;
   border-radius:15px;
   margin: 0 auto;
@@ -710,4 +708,102 @@ transform: translateY(-3px);
 
 .mtr-link:hover {
   background-color: rgb(216 164 56);
+}
+
+/* Start of comment part */
+
+.commentpart {
+  background-color: rgb(241 240 240);
+  padding: 2rem 0;
+}
+
+.commentpart-mainbox {
+  max-width: 950px;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.rating-header {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  margin-bottom:5px;
+}
+
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5px;
+  align-items: center;
+  width:22%;
+} 
+
+.rating-circle-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom:7px;
+}
+
+.rating-img {
+  width: 25px;
+}
+
+.tripadvisor-box {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  margin: 0 auto;
+  margin-top:7px;
+}
+
+.tripadvisor-img {
+  width:22px;
+  height: auto;
+  margin-right:3px;
+}
+
+.tripadvisor-text {
+  font-weight: bolder;
+}
+
+.comment-box {
+  width:70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding:0.5rem;
+  border-radius: 7px;
+  width:40%;
+}
+
+.comment-rating {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  margin-top:5px;
+}
+
+.comment-rating-img {
+  width:20px;
+  margin-right:1px;
+}
+
+.commenthead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment-infobox {
+  display: flex;
+  flex-direction: column;
 }
