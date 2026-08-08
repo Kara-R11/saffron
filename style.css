@@ -1054,7 +1054,7 @@ footer {
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
-    width:85%;
+    width:100%;
   }
 
   .landing-menulink {
