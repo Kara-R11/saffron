@@ -12,3 +12,9 @@ $(".blog-posts").slice(2).hide();
 $(".allpost-btn").click(function() {
     $(".blog-posts").slice(2).fadeIn();
 });
+
+//header
+
+$(".listtag-link").click(function() {
+    alert($(this).text() + " was clicked");
+})
